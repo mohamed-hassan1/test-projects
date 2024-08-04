@@ -1,11 +1,15 @@
 (function() {
-  let arr = [
-    {id: 1, name: 'Mohamed'},
-    {id: 5, name: 'Hassan'},
-    {id: 8, name: 'Mostafa'}
-  ];
+  let obj = {
+    firstName: 'Mohamed',
+    lastName: 'Hassan',
+    age: 27
+  }
 
-  let ids = arr.map(user => user.id);
-  console.log(ids)
+  let arr = [];
+
+  for (let x in obj) {
+    arr.push([x, obj[x]])
+  }
+  console.log(arr)
 
 }());
