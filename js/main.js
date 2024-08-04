@@ -1,5 +1,5 @@
 (function() {
-  console.log('Hello world :)')
+  console.log(Math.round(2.5))
 
 
 
