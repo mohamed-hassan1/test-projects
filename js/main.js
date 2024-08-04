@@ -1,14 +1,14 @@
 (function() {
-  let arr = [1,2,3,4,5];
+  let arr = [8,4,6,2,4,3,2,0,6,4];
 
-  arr.push(6);
   console.log(arr);
-  arr.unshift(0);
+  arr.sort();
   console.log(arr);
-  arr.pop();
-  console.log(arr);
-  arr.shift();
+  arr.sort((x,y) => {
+    return y - x;
+  })
   console.log(arr)
+  
 
 
 
