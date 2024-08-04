@@ -1,13 +1,11 @@
 (function() {
-  let arr = [8,4,6,2,4,3,2,0,6,4];
+  let arr = [
+    {id: 1, name: 'Mohamed'},
+    {id: 5, name: 'Hassan'},
+    {id: 8, name: 'Mostafa'}
+  ];
 
-  let res = arr.find(num => num < 5);
-  console.log(res);
-
-  let res2 = arr.filter(num => num < 5);
-
-  console.log(res2)
-
-
+  let ids = arr.map(user => user.id);
+  console.log(ids)
 
 }());
